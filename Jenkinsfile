@@ -12,10 +12,6 @@ pipeline {
             }
         }
         stage('Build') {
-            node {
-                    // Steps that require FilePath context, e.g., junit
-                    junit '**/target/surefire-reports/*.xml'
-                }
             steps {
                 sh 'mvn clean install -DskipTests'
             }
