@@ -38,6 +38,6 @@ public class AppTest {
             .then()
                 .statusCode(200)
                 .body("key", equalTo("value"));
-                /*test comment */
+                /*test comment    */
     }
 }
